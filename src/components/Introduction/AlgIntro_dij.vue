@@ -5,7 +5,7 @@
         <p>Dijkstra algorithm is used to find the shortest path from one vertex to all other vertices in the graph. It is suitable for both unweighted graphs and directed weighted graphs.</p>
         <p>Note that when using Dijkstra algorithm to find the shortest path, the weights of all edges in the graph must be guaranteed to be non-negative, otherwise the search process is easy to make mistakes.</p>
         <h2>The realization of Dijkstra algorithm</h2>
-        <img src="../../assets/dij.gif"><br>
+        <img src="../../assets/dij.gif" width="600" height="auto"><br>
         First of all, we can set up two sets, A and B.
         <p style="color: red">A is used to store the points where the shortest path has been calculated, and B is used to store the points where the shortest path has not been calculated.</p>
         So let's do this at any point on the graph, and let's say we choose source at 0. So the distance from all the initial points to 0 we're going to assume is ∞, which means unreachable. The distance from source point 0 to itself is 0, and the initialization is as follows: Then set A is: {0}, set B is: {1,2,3,4,5,6}
@@ -61,7 +61,7 @@
         <h2>NOTE</h2>
         <h3>1. Graphs with negative weighted edges cannot be processed (the optimal solution may not be obtained, so it is considered that negative weighted graphs cannot be processed), but only non-negative weighted graphs can be processed.</h3>
         <p>Why? In this graph for example, according to Dijkstra's idea, first the 0 point is added to the set, then the 1 point is added to the set, then the 3 point is added to the set, and then the 2 is added to the set, then the 0-&gt; 2 has been updated to 99-300, but it is no longer available. 3 (the original value was 2).</p>
-        <img src="../../assets/dij_note.png">
+        <img src="../../assets/dij_note.png" width="60%">
         <h3>2. Only the single-source shortest path problem can be solved</h3>
         <br><br>
         <h2>Core Code</h2>

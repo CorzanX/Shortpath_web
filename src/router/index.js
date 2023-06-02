@@ -23,6 +23,8 @@ const routes =
             {path: 'fly',component: () => import('../components/Introduction/AlgIntro_fly.vue') },
             {path: 'SPFA',component: () => import('../components/Introduction/AlgIntro_SPFA.vue') },
             {path: 'BF',component: () => import('../components/Introduction/AlgIntro_bf.vue') },
+            
+            
         ]
 
     },
@@ -33,12 +35,17 @@ const routes =
         children: [
             {path: 'upload',component: () => import('../components/Compare/Algcmp_upload.vue') },
             {path: 'example',component: () => import('../components/Compare/Algcmp_example.vue') },
+            {path: 'diy',component: () => import('../components/Compare/diy.vue') },
         ] 
     },
     {
-        path: '/literature',
-        name: 'literature',
-        component: () => import('../components/Lit.vue') 
+        path: '/material',
+        name: 'material',
+        component: () => import('../components/material/material.vue'),
+        children: [
+            {path: 'exercise',component: () => import('../components/material/exercise.vue') },
+            {path: 'literature',component: () => import('../components/material/literature.vue') },
+        ] 
     },
     ]
 

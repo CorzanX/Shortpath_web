@@ -2,12 +2,12 @@
     <div>
         <el-container>
             <el-container>
-              <el-aside width="200px">
+              <el-aside>
                 <el-menu :default-openeds="['1']" router>
                     <el-submenu index="1">
                       <template slot="title"><i class="el-icon-s-grid"></i>Gragh</template>
                       <el-menu-item-group>
-                        <el-menu-item index="1-1" route="/datastc/oriented">oriented</el-menu-item>
+                        <el-menu-item index="1-1" route="/datastc/oriented">directed graph</el-menu-item>
                         <el-menu-item index="1-2" route="/datastc/undrc_graph">undirected graph</el-menu-item>
                       </el-menu-item-group>
                     </el-submenu>

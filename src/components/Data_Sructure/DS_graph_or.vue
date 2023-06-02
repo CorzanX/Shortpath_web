@@ -13,7 +13,7 @@
 
 
 <script>
-    import oriented_Graph from '../oriented.vue';
+    import oriented_Graph from '../directed_graph.vue';
     export default {
       name : 'parent_oriented',
       components:{

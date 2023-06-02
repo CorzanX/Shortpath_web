@@ -1,0 +1,15 @@
+undirected
+vertex A
+vertex B
+vertex C
+vertex D
+vertex E
+edge A B 5
+edge B C 3
+edge C D 4
+edge D E 6
+edge A D 7
+edge D A 5
+edge A C 0
+edge B D 0
+edge E A 0

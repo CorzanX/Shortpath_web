@@ -16,7 +16,7 @@
           </p>
         <el-upload
             class="upload-demo"
-            action="http://120.26.196.251:8088/cmp"
+            action="http://www.corzanx.com:8088/cmp"
             :on-success="handleSuccess"
             :before-upload="beforeUpload"
             >
@@ -25,7 +25,7 @@
         </el-upload>
         <div v-if="txtData">
           <div v-if="flag === 1">
-            <undirected_graph :parentHeight="400" :parentWidth="400" :links="links" :nodes="nodes"/>
+            <undirected_graph :parentHeight="500" :parentWidth="500" :links="links" :nodes="nodes"/>
           </div>
           <div v-else>
             <directed_graph :links="links" :nodes="nodes"/>
@@ -38,7 +38,7 @@
             <el-button type="primary" @click="handleSubmit">Submit</el-button>
           </div>
           <div v-if="stp">
-            <p style="white-space: pre-line; white-space: pre-wrap;">The shortest path from {{input_start}} to {{input_end}} is {{stp}}</p>
+            <p style="white-space: pre-line; white-space: pre-wrap;">{{stp}}</p>
           </div>
         </div>
     </div>
@@ -48,20 +48,20 @@
 <script>
   import axios from 'axios';
   import undirected_graph from '../undirected_graph.vue';
-  import directed_graph from '../oriented.vue'
+  import directed_graph from '../directed_graph.vue'
   export default {
     components:{
         undirected_graph,directed_graph
       },
     data() {
       return {
-        txtData: '',
         nodes: [],
         links: [],
         input_start: '',
         input_end: '',
         stp: '',
-        flag: -1
+        flag: -1,
+        txtData: ''
       };
     },
     methods: {

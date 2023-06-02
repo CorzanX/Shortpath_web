@@ -2,7 +2,7 @@
   <div>
       <el-container>
           <el-container>
-            <el-aside width="200px">
+            <el-aside>
               <el-menu :default-openeds="['1']" router="">
                   
                   <el-submenu index="1">
@@ -11,7 +11,8 @@
                     <el-menu-item-group>
                       <template slot="title">Shortest Path</template>
                       <el-menu-item index="1-1" route="/algcmp/example">Example</el-menu-item>
-                      <el-menu-item index="1-2" route="/algcmp/upload">By yourself</el-menu-item>
+                      <el-menu-item index="1-2" route="/algcmp/upload">Test</el-menu-item>
+                      <el-menu-item index="1-3" route="/algcmp/diy">By yourself</el-menu-item>
                     </el-menu-item-group>
                   </el-submenu>
                 </el-menu>
