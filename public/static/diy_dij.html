@@ -25,10 +25,41 @@
           </button>
           <button
             class="outline-btn reset-btn"
-            onclick="resetDrawingArea()"
+            onclick="resetDrawingArea(),clearScreenAll()"
             disabled
           >
             Clear
+          </button>
+        </div>
+        <div>
+          <button
+            class="outline-btn left-btn"
+            onclick="backward()"
+            disabled
+          >
+            &lt;
+          </button>
+          <button
+            class="outline-btn stop-btn"
+            onclick="astatus()"
+            disabled
+          >
+            stop
+          </button>
+          <button
+            class="outline-btn right-btn"
+            onclick="forward()"
+            disabled
+          >
+            &gt;
+          </button>
+          <span id="progress"></span>
+          <button
+            class="outline-btn result-btn"
+            onclick="showResult()"
+            disabled
+          >
+            Show Result
           </button>
         </div>
         <div>
@@ -54,6 +85,6 @@
     <div class="path"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/gsap.min.js"></script>
     <script src="./gsap.js"></script>
-    <script src="./script.js"></script>
+    <script src="./dij.js"></script>
   </body>
 </html>

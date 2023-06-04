@@ -12,6 +12,7 @@
                       <el-menu-item index="1-2" route="/algintro/fly" @click="handleMenuItemClick">Floyd</el-menu-item>
                       <el-menu-item index="1-3" route="/algintro/SPFA" @click="handleMenuItemClick">SPFA</el-menu-item>
                       <el-menu-item index="1-4" route="/algintro/bf" @click="handleMenuItemClick">Bellman-Ford</el-menu-item>
+                      <el-menu-item index="1-4" route="/algintro/diy" @click="handleMenuItemClick">By yourself</el-menu-item>
                     </el-menu-item-group>
                   </el-submenu>
                 </el-menu>

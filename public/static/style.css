@@ -130,3 +130,19 @@ main ul > li {
 .path::-webkit-scrollbar {
   display: none;
 }
+i {
+  border: 3px #fff;
+  border-width: 0px 1px 1px 0px;
+  
+  padding: 5px;
+}
+
+.left{
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.right{
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}

@@ -23,7 +23,7 @@ const routes =
             {path: 'fly',component: () => import('../components/Introduction/AlgIntro_fly.vue') },
             {path: 'SPFA',component: () => import('../components/Introduction/AlgIntro_SPFA.vue') },
             {path: 'BF',component: () => import('../components/Introduction/AlgIntro_bf.vue') },
-            
+            {path: 'diy',component: () => import('../components/Introduction/diy.vue') },
             
         ]
 
@@ -35,7 +35,7 @@ const routes =
         children: [
             {path: 'upload',component: () => import('../components/Compare/Algcmp_upload.vue') },
             {path: 'example',component: () => import('../components/Compare/Algcmp_example.vue') },
-            {path: 'diy',component: () => import('../components/Compare/diy.vue') },
+            
         ] 
     },
     {
